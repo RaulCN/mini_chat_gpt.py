@@ -1,1 +1,1 @@
-# mini_chat_gpt.py
+# mini_chat_gpt2.py
