@@ -6,7 +6,7 @@ tokenizer = AutoTokenizer.from_pretrained("pierreguillou/gpt2-small-portuguese")
 
 # Carrega os parâmetros do modelo salvos em .pth
 model_path = "mini_GPT2_Pt.pth"
-model_state_dict = torch.load(model_path)
+model_state_dict = torch.load(model_path) #n é possível upar arquivos muito grandes no github, considere usar o outro arquivo que usa os parâmetros do arquivo pré-treinado
 
 # Cria uma nova instância do modelo e carrega os parâmetros salvos
 model = AutoModelForCausalLM.from_pretrained("pierreguillou/gpt2-small-portuguese", state_dict=model_state_dict)
